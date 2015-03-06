@@ -1,19 +1,9 @@
-node-polling
+node-ictclas
 ============
 
-High performance long polling server, Single timer + Event base.
+ICTCLAS, Chinese word segment npm packet(also for english).
 
 Example:
 ```
-var HttpConn = require('node-polling').create();
-HttpConn.start(3000, '127.0.0.1');
-HttpConn.on('conn', function(uid, queryObj, data){
-    console.log('event_conn:', JSON.stringify(arguments));
-    setTimeout(function(){
-        HttpConn.SendByUid(uid, 'hello,world');
-    }, 3000);
-});
-HttpConn.on('close', function(uid){
-    console.log('event_close:', JSON.stringify(arguments));
-});
+
 ```
