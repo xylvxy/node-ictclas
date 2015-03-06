@@ -1,0 +1,28 @@
+{
+  "name": "node-ictclas",
+  "description": "ICTCLAS, Chinese word segment npm packet(also for english).",
+  "homepage": "https://github.com/xylvxy/node-ictclas/",
+  "keywords": [
+    "ictclas",
+    "chinese segment",
+    "ictclas 2015"
+  ],
+  "author": {
+    "name": "James Loo",
+    "email": "xy.lvxy@gmail.com"
+  },
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "main": "./lib/index",
+  "directories": {
+      "lib": "./lib/"
+  },
+  "engines": {
+    "node": ">=0.6.19"
+  },
+  "scripts": {
+      "install": "(node-gyp rebuild 2> builderror.log) || (exit 0)",
+      "test": ""
+  }
+}
