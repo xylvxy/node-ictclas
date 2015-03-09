@@ -17,7 +17,7 @@ Handle<Value> initICTCLAS(const Arguments& args) {
 	HandleScope scope;
 	Handle<Value> arg = args[0];
   String::Utf8Value initDir(arg);
-  bool initRst = NLPIR_Init(*initDir, UTF8_CODE);
+  int initRst = NLPIR_Init(*initDir, UTF8_CODE);
   if(!initRst){
     NLPIR_Exit();
   	ThrowException(Exception::TypeError(String::New("initial failure")));
